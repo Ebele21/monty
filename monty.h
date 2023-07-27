@@ -8,7 +8,7 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * struct stack_s - It is doubly linked list representation of a stack (or queue)
+ * struct stack_s - It is doubly linked list representation of a stack
  * @n: It is an integer
  * @prev: It points to the previous element of the stack (or queue)
  * @next: It points to the next element of the stack (or queue)

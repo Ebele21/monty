@@ -6,6 +6,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
 * @argv: monty file location
 * Return: 0 on success
 */
+
 int main(int argc, char *argv[])
 {
 	char *content;
@@ -16,10 +17,11 @@ int main(int argc, char *argv[])
 	unsigned int counter = 0;
 	ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
-	if (argc != 2)
-	{
-		fprintf(stderr, "USAGE: monty file\n");
-		exit(EXIT_FAILURE);
+
+if (argc != 2)
+{
+fprintf(stderr, "USAGE: monty file\n");
+exit(EXIT_FAILURE);
 	}
 	file = fopen(argv[1], "r");
 	bus.file = file;
